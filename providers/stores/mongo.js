@@ -81,16 +81,20 @@ class MongoStore {
     const pageSize = 50 // no option for page size, just next tokens
     const filter = this._buildQuery(query, continuationToken)
     const sort = this._buildSort(query)
-    const cursor = await this.collection.find(filter, {
-      projection: { _id: 0, files: 0 },
-      sort: sort,
-      limit: pageSize
-    })
-    const data = await cursor.toArray()
-    continuationToken = this._getContinuationToken(pageSize, data)
-    data.forEach(def => {
-      delete def._mongo
-    })
+    const data = await this.collection
+      .find(
+        { 'coordinates.namespace': '@types' },
+        {
+          sort: { 'coordinates.name': 1 },
+          limit: 50
+        }
+      )
+      .toArray()
+
+    //continuationToken = this._getContinuationToken(pageSize, data)
+    // data.forEach(def => {
+    //   delete def._mongo
+    // })
     return { data, continuationToken }
   }
 

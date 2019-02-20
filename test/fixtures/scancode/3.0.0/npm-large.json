@@ -2,34 +2,31 @@
   "_metadata": {
     "type": "scancode",
     "url": "cd:/npm/npmjs/-/node-forge/0.7.5",
-    "fetchedAt": "2018-12-18T22:14:37.801Z",
+    "fetchedAt": "2019-02-14T22:02:30.457Z",
     "links": {
-      "self": {
-        "href": "urn:npm:npmjs:-:node-forge:revision:0.7.5:tool:scancode:2.9.8",
-        "type": "resource"
-      },
-      "siblings": {
-        "href": "urn:npm:npmjs:-:node-forge:revision:0.7.5:tool:scancode",
-        "type": "collection"
-      }
+      "self": { "href": "urn:npm:npmjs:-:node-forge:revision:0.7.5:tool:scancode:3.1.0", "type": "resource" },
+      "siblings": { "href": "urn:npm:npmjs:-:node-forge:revision:0.7.5:tool:scancode", "type": "collection" }
     },
-    "version": "2.9.8",
+    "schemaVersion": "3.1.0",
+    "toolVersion": "3.0.0",
     "contentType": "application/json",
     "releaseDate": "2018-03-31T00:24:46.810Z",
-    "processedAt": "2018-12-18T22:15:10.062Z"
+    "processedAt": "2019-02-14T22:03:05.223Z"
   },
   "content": {
     "headers": [
       {
         "tool_name": "scancode-toolkit",
-        "tool_version": "2.9.8",
+        "tool_version": "3.0.0",
         "options": {
-          "input": "/tmp/cd-KRNh3D",
+          "input": "/tmp/cd-KMdLeQ",
           "--copyright": true,
           "--info": true,
-          "--json-pp": "/tmp/cd-wlUfst",
+          "--is-license-text": true,
+          "--json-pp": "/tmp/cd-3QFrib",
           "--license": true,
           "--license-diag": true,
+          "--license-text": true,
           "--only-findings": true,
           "--package": true,
           "--processes": "2",
@@ -37,8 +34,8 @@
           "--timeout": "1000.0"
         },
         "notice": "Generated with ScanCode and provided on an \"AS IS\" BASIS, WITHOUT WARRANTIES\nOR CONDITIONS OF ANY KIND, either express or implied. No content created from\nScanCode should be considered or used as legal advice. Consult an Attorney\nfor any legal advice.\nScanCode is a free software code scanning tool from nexB Inc. and others.\nVisit https://github.com/nexB/scancode-toolkit/ for support and download.",
-        "start_timestamp": "2018-12-18T221438.757232",
-        "end_timestamp": "2018-12-18T221509.290364",
+        "start_timestamp": "2019-02-14T220231.608341",
+        "end_timestamp": "2019-02-14T220304.363584",
         "message": null,
         "errors": [],
         "extra_data": { "files_count": 53 }
@@ -79,7 +76,6 @@
             "subpath": null,
             "primary_language": "JavaScript",
             "description": "JavaScript implementations of network transports, cryptography, ciphers, PKI, message digests, and various utilities.",
-            "size": null,
             "release_date": null,
             "parties": [
               {
@@ -149,17 +145,16 @@
             ],
             "homepage_url": "https://github.com/digitalbazaar/forge",
             "download_url": "https://registry.npmjs.org/node-forge/-/node-forge-0.7.5.tgz",
-            "download_sha1": null,
-            "download_md5": null,
-            "download_sha256": null,
-            "download_sha512": null,
+            "size": null,
+            "sha1": null,
+            "md5": null,
+            "sha256": null,
+            "sha512": null,
             "bug_tracking_url": "https://github.com/digitalbazaar/forge/issues",
             "code_view_url": null,
-            "vcs_tool": "git",
-            "vcs_repository": "https://github.com/digitalbazaar/forge",
-            "vcs_revision": null,
+            "vcs_url": "git+https://github.com/digitalbazaar/forge",
             "copyright": null,
-            "license_expression": "bsd-new AND gpl-2.0 AND unknown",
+            "license_expression": "bsd-new OR gpl-2.0",
             "declared_license": "(BSD-3-Clause OR GPL-2.0)",
             "notice_text": null,
             "manifest_path": "package.json",
@@ -381,6 +376,7 @@
             "api_data_url": "https://registry.npmjs.org/node-forge/0.7.5"
           }
         ],
+        "is_license_text": false,
         "files_count": 53,
         "dirs_count": 0,
         "size_count": 1029183,
@@ -408,7 +404,7 @@
         "licenses": [
           {
             "key": "bsd-new",
-            "score": 17,
+            "score": 16,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -433,12 +429,13 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 16
+            },
+            "matched_text": "the BSD License"
           },
           {
             "key": "gpl-2.0",
-            "score": 41,
+            "score": 38,
             "name": "GNU General Public License 2.0",
             "short_name": "GPL 2.0",
             "category": "Copyleft",
@@ -463,12 +460,13 @@
               "rule_length": 7,
               "matched_length": 7,
               "match_coverage": 100,
-              "rule_relevance": 41
-            }
+              "rule_relevance": 38
+            },
+            "matched_text": "GNU General Public License (GPL) Version 2."
           },
           {
             "key": "bsd-new",
-            "score": 17,
+            "score": 16,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -493,8 +491,9 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 16
+            },
+            "matched_text": "The BSD License"
           },
           {
             "key": "gpl-1.0-plus",
@@ -512,7 +511,7 @@
             "start_line": 8,
             "end_line": 8,
             "matched_rule": {
-              "identifier": "gpl_61.RULE",
+              "identifier": "gpl_bare_word_only.RULE",
               "license_expression": "gpl-1.0-plus",
               "licenses": ["gpl-1.0-plus"],
               "is_license_text": false,
@@ -524,11 +523,12 @@
               "matched_length": 1,
               "match_coverage": 100,
               "rule_relevance": 5
-            }
+            },
+            "matched_text": "GPL"
           },
           {
             "key": "bsd-new",
-            "score": 17,
+            "score": 16,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -553,8 +553,9 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 16
+            },
+            "matched_text": "New BSD License ("
           },
           {
             "key": "bsd-new",
@@ -584,11 +585,12 @@
               "matched_length": 207,
               "match_coverage": 97.64,
               "rule_relevance": 100
-            }
+            },
+            "matched_text": "Redistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n    * Redistributions of source code must retain the above copyright\n      notice, this list of conditions and the following disclaimer.\n    * Redistributions in binary form must reproduce the above copyright\n      notice, this list of conditions and the following disclaimer in the\n      documentation and/or other materials provided with the distribution.\n    * Neither the name of [Digital] [Bazaar], Inc. nor the\n      names of its contributors may be used to endorse or promote products\n      derived from this software without specific prior written permission.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND\nANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED\nWARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\nDISCLAIMED. IN NO EVENT SHALL [DIGITAL] [BAZAAR] BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS\nSOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE."
           },
           {
             "key": "gpl-2.0",
-            "score": 35,
+            "score": 33,
             "name": "GNU General Public License 2.0",
             "short_name": "GPL 2.0",
             "category": "Copyleft",
@@ -613,12 +615,75 @@
               "rule_length": 6,
               "matched_length": 6,
               "match_coverage": 100,
-              "rule_relevance": 35
-            }
+              "rule_relevance": 33
+            },
+            "matched_text": "GNU GENERAL PUBLIC LICENSE\n           Version 2,"
+          },
+          {
+            "key": "gpl-1.0-plus",
+            "score": 27,
+            "name": "GNU General Public License 1.0 or later",
+            "short_name": "GPL 1.0 or later",
+            "category": "Copyleft",
+            "is_exception": false,
+            "owner": "Free Software Foundation (FSF)",
+            "homepage_url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
+            "text_url": "http://www.gnu.org/licenses/old-licenses/gpl-1.0-standalone.html",
+            "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:gpl-1.0-plus",
+            "spdx_license_key": "GPL-1.0-or-later",
+            "spdx_url": "https://spdx.org/licenses/GPL-1.0-or-later",
+            "start_line": 64,
+            "end_line": 65,
+            "matched_rule": {
+              "identifier": "gpl-1.0-plus_33.RULE",
+              "license_expression": "gpl-1.0-plus",
+              "licenses": ["gpl-1.0-plus"],
+              "is_license_text": false,
+              "is_license_notice": false,
+              "is_license_reference": true,
+              "is_license_tag": false,
+              "matcher": "2-aho",
+              "rule_length": 5,
+              "matched_length": 5,
+              "match_coverage": 100,
+              "rule_relevance": 27
+            },
+            "matched_text": "the GNU General Public\nLicense"
+          },
+          {
+            "key": "lgpl-2.1-plus",
+            "score": 33,
+            "name": "GNU Lesser General Public License 2.1 or later",
+            "short_name": "LGPL 2.1 or later",
+            "category": "Copyleft Limited",
+            "is_exception": false,
+            "owner": "Free Software Foundation (FSF)",
+            "homepage_url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html",
+            "text_url": "http://www.gnu.org/licenses/old-licenses/lgpl-2.1-standalone.html",
+            "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:lgpl-2.1-plus",
+            "spdx_license_key": "LGPL-2.1-or-later",
+            "spdx_url": "https://spdx.org/licenses/LGPL-2.1-or-later",
+            "start_line": 70,
+            "end_line": 70,
+            "matched_rule": {
+              "identifier": "lgpl-2.1-plus_83_1.RULE",
+              "license_expression": "lgpl-2.1-plus",
+              "licenses": ["lgpl-2.1-plus"],
+              "is_license_text": false,
+              "is_license_notice": false,
+              "is_license_reference": true,
+              "is_license_tag": false,
+              "matcher": "2-aho",
+              "rule_length": 6,
+              "matched_length": 6,
+              "match_coverage": 100,
+              "rule_relevance": 33
+            },
+            "matched_text": "the GNU Lesser General Public License"
           },
           {
             "key": "gpl-2.0",
-            "score": 94.79,
+            "score": 100,
             "name": "GNU General Public License 2.0",
             "short_name": "GPL 2.0",
             "category": "Copyleft",
@@ -629,26 +694,58 @@
             "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:gpl-2.0",
             "spdx_license_key": "GPL-2.0-only",
             "spdx_url": "https://spdx.org/licenses/GPL-2.0-only",
-            "start_line": 57,
-            "end_line": 308,
+            "start_line": 111,
+            "end_line": 145,
             "matched_rule": {
-              "identifier": "gpl-2.0_and_unknown_trommel_1.RULE",
-              "license_expression": "gpl-2.0 AND unknown",
-              "licenses": ["gpl-2.0", "unknown"],
+              "identifier": "gpl-2.0_84.RULE",
+              "license_expression": "gpl-2.0",
+              "licenses": ["gpl-2.0"],
               "is_license_text": false,
-              "is_license_notice": false,
-              "is_license_reference": "text",
+              "is_license_notice": true,
+              "is_license_reference": false,
               "is_license_tag": false,
-              "matcher": "3-seq",
-              "rule_length": 2285,
-              "matched_length": 2280,
-              "match_coverage": 99.78,
-              "rule_relevance": 95
-            }
+              "matcher": "2-aho",
+              "rule_length": 326,
+              "matched_length": 326,
+              "match_coverage": 100,
+              "rule_relevance": 100
+            },
+            "matched_text": "GNU GENERAL PUBLIC LICENSE\n   TERMS AND CONDITIONS FOR COPYING, DISTRIBUTION AND MODIFICATION\n\n  0. This License applies to any program or other work which contains\na notice placed by the copyright holder saying it may be distributed\nunder the terms of this General Public License.  The \"Program\", below,\nrefers to any such program or work, and a \"work based on the Program\"\nmeans either the Program or any derivative work under copyright law:\nthat is to say, a work containing the Program or a portion of it,\neither verbatim or with modifications and/or translated into another\nlanguage.  (Hereinafter, translation is included without limitation in\nthe term \"modification\".)  Each licensee is addressed as \"you\".\n\nActivities other than copying, distribution and modification are not\ncovered by this License; they are outside its scope.  The act of\nrunning the Program is not restricted, and the output from the Program\nis covered only if its contents constitute a work based on the\nProgram (independent of having been made by running the Program).\nWhether that is true depends on what the Program does.\n\n  1. You may copy and distribute verbatim copies of the Program's\nsource code as you receive it, in any medium, provided that you\nconspicuously and appropriately publish on each copy an appropriate\ncopyright notice and disclaimer of warranty; keep intact all the\nnotices that refer to this License and to the absence of any warranty;\nand give any other recipients of the Program a copy of this License\nalong with the Program.\n\nYou may charge a fee for the physical act of transferring a copy, and\nyou may at your option offer warranty protection in exchange for a fee.\n\n  2. You may modify your copy or copies of the Program or any portion\nof it, thus forming a work based on the Program, and copy and\ndistribute such modifications or work under the terms of Section 1\nabove, provided that you also meet all of these conditions:"
+          },
+          {
+            "key": "gpl-2.0",
+            "score": 90,
+            "name": "GNU General Public License 2.0",
+            "short_name": "GPL 2.0",
+            "category": "Copyleft",
+            "is_exception": false,
+            "owner": "Free Software Foundation (FSF)",
+            "homepage_url": "http://www.gnu.org/licenses/gpl-2.0.html",
+            "text_url": "http://www.gnu.org/licenses/gpl-2.0.txt",
+            "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:gpl-2.0",
+            "spdx_license_key": "GPL-2.0-only",
+            "spdx_url": "https://spdx.org/licenses/GPL-2.0-only",
+            "start_line": 147,
+            "end_line": 164,
+            "matched_rule": {
+              "identifier": "gpl-2.0_19.RULE",
+              "license_expression": "gpl-2.0",
+              "licenses": ["gpl-2.0"],
+              "is_license_text": false,
+              "is_license_notice": true,
+              "is_license_reference": false,
+              "is_license_tag": false,
+              "matcher": "2-aho",
+              "rule_length": 174,
+              "matched_length": 174,
+              "match_coverage": 100,
+              "rule_relevance": 90
+            },
+            "matched_text": "a) You must cause the modified files to carry prominent notices\n    stating that you changed the files and the date of any change.\n\n    b) You must cause any work that you distribute or publish, that in\n    whole or in part contains or is derived from the Program or any\n    part thereof, to be licensed as a whole at no charge to all third\n    parties under the terms of this License.\n\n    c) If the modified program normally reads commands interactively\n    when run, you must cause it, when started running for such\n    interactive use in the most ordinary way, to print or display an\n    announcement including an appropriate copyright notice and a\n    notice that there is no warranty (or else, saying that you provide\n    a warranty) and that users may redistribute the program under\n    these conditions, and telling the user how to view a copy of this\n    License.  (Exception: if the Program itself is interactive but\n    does not normally print such an announcement, your work based on\n    the Program is not required to print an announcement.)"
           },
           {
             "key": "unknown",
-            "score": 94.79,
+            "score": 22,
             "name": "Unknown license detected but not recognized",
             "short_name": "unknown",
             "category": "Unstated License",
@@ -659,52 +756,23 @@
             "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:unknown",
             "spdx_license_key": "",
             "spdx_url": "",
-            "start_line": 57,
-            "end_line": 308,
+            "start_line": 211,
+            "end_line": 212,
             "matched_rule": {
-              "identifier": "gpl-2.0_and_unknown_trommel_1.RULE",
-              "license_expression": "gpl-2.0 AND unknown",
-              "licenses": ["gpl-2.0", "unknown"],
+              "identifier": "unknown_11.RULE",
+              "license_expression": "unknown",
+              "licenses": ["unknown"],
               "is_license_text": false,
               "is_license_notice": false,
-              "is_license_reference": "text",
+              "is_license_reference": true,
               "is_license_tag": false,
-              "matcher": "3-seq",
-              "rule_length": 2285,
-              "matched_length": 2280,
-              "match_coverage": 99.78,
-              "rule_relevance": 95
-            }
-          },
-          {
-            "key": "infineon-free",
-            "score": 99.02,
-            "name": "Infineon Free Software License",
-            "short_name": "Infineon Free Software License",
-            "category": "Permissive",
-            "is_exception": false,
-            "owner": "Infineon Technologies",
-            "homepage_url": "",
-            "text_url": "",
-            "reference_url": "https://enterprise.dejacode.com/urn/urn:dje:license:infineon-free",
-            "spdx_license_key": "",
-            "spdx_url": "",
-            "start_line": 312,
-            "end_line": 330,
-            "matched_rule": {
-              "identifier": "infineon-free.LICENSE",
-              "license_expression": "infineon-free",
-              "licenses": ["infineon-free"],
-              "is_license_text": true,
-              "is_license_notice": false,
-              "is_license_reference": false,
-              "is_license_tag": false,
-              "matcher": "3-seq",
-              "rule_length": 204,
-              "matched_length": 202,
-              "match_coverage": 99.02,
-              "rule_relevance": 100
-            }
+              "matcher": "2-aho",
+              "rule_length": 4,
+              "matched_length": 4,
+              "match_coverage": 100,
+              "rule_relevance": 22
+            },
+            "matched_text": "as a\nspecial exception,"
           }
         ],
         "license_expressions": [
@@ -715,41 +783,25 @@
           "bsd-new",
           "bsd-new",
           "gpl-2.0",
-          "gpl-2.0 AND unknown",
-          "infineon-free"
+          "gpl-1.0-plus",
+          "lgpl-2.1-plus",
+          "gpl-2.0",
+          "gpl-2.0",
+          "unknown"
         ],
         "holders": [
           { "value": "Digital Bazaar, Inc.", "start_line": 27, "end_line": 28 },
-          {
-            "value": "Free Software Foundation, Inc.",
-            "start_line": 56,
-            "end_line": 58
-          },
-          {
-            "value": "the Free Software Foundation",
-            "start_line": 303,
-            "end_line": 308
-          }
+          { "value": "Free Software Foundation, Inc.", "start_line": 56, "end_line": 58 },
+          { "value": "the Free Software Foundation", "start_line": 303, "end_line": 308 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2010, Digital Bazaar, Inc.",
-            "start_line": 27,
-            "end_line": 28
-          },
-          {
-            "value": "Copyright (c) 1989, 1991 Free Software Foundation, Inc.",
-            "start_line": 56,
-            "end_line": 58
-          },
-          {
-            "value": "copyrighted by the Free Software Foundation",
-            "start_line": 303,
-            "end_line": 308
-          }
+          { "value": "Copyright (c) 2010, Digital Bazaar, Inc.", "start_line": 27, "end_line": 28 },
+          { "value": "Copyright (c) 1989, 1991 Free Software Foundation, Inc.", "start_line": 56, "end_line": 58 },
+          { "value": "copyrighted by the Free Software Foundation", "start_line": 303, "end_line": 308 }
         ],
         "authors": [],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -777,7 +829,7 @@
         "licenses": [
           {
             "key": "bsd-new",
-            "score": 23,
+            "score": 22,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -802,12 +854,13 @@
               "rule_length": 4,
               "matched_length": 4,
               "match_coverage": 100,
-              "rule_relevance": 23
-            }
+              "rule_relevance": 22
+            },
+            "matched_text": "license\": \"(BSD-3-Clause"
           },
           {
             "key": "gpl-2.0",
-            "score": 17,
+            "score": 80,
             "name": "GNU General Public License 2.0",
             "short_name": "GPL 2.0",
             "category": "Copyleft",
@@ -832,8 +885,9 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 80
+            },
+            "matched_text": "GPL-2.0)\","
           }
         ],
         "license_expressions": ["bsd-new", "gpl-2.0"],
@@ -841,6 +895,7 @@
         "copyrights": [],
         "authors": [],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -868,7 +923,7 @@
         "licenses": [
           {
             "key": "bsd-new",
-            "score": 17,
+            "score": 16,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -893,12 +948,13 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 16
+            },
+            "matched_text": "the BSD License"
           },
           {
             "key": "gpl-2.0",
-            "score": 41,
+            "score": 38,
             "name": "GNU General Public License 2.0",
             "short_name": "GPL 2.0",
             "category": "Copyleft",
@@ -923,8 +979,9 @@
               "rule_length": 7,
               "matched_length": 7,
               "match_coverage": 100,
-              "rule_relevance": 41
-            }
+              "rule_relevance": 38
+            },
+            "matched_text": "GNU General Public\nLicense (GPL) Version 2."
           }
         ],
         "license_expressions": ["bsd-new", "gpl-2.0"],
@@ -932,6 +989,7 @@
         "copyrights": [],
         "authors": [],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -973,7 +1031,7 @@
             "start_line": 4,
             "end_line": 4,
             "matched_rule": {
-              "identifier": "public-domain_79.RULE",
+              "identifier": "public-domain_bare_words.RULE",
               "license_expression": "public-domain",
               "licenses": ["public-domain"],
               "is_license_text": false,
@@ -985,20 +1043,16 @@
               "matched_length": 2,
               "match_coverage": 100,
               "rule_relevance": 50
-            }
+            },
+            "matched_text": "public domain"
           }
         ],
         "license_expressions": ["public-domain"],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 16, "end_line": 16 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 16,
-            "end_line": 16
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 16, "end_line": 16 }],
         "authors": [{ "value": "Dave Longley", "start_line": 14, "end_line": 14 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1026,15 +1080,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2009-2015 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2009-2015 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1062,15 +1111,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2015 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2015 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1124,7 +1168,8 @@
               "matched_length": 2,
               "match_coverage": 100,
               "rule_relevance": 11
-            }
+            },
+            "matched_text": "MIT licensed:"
           },
           {
             "key": "mit",
@@ -1154,7 +1199,8 @@
               "matched_length": 167,
               "match_coverage": 100,
               "rule_relevance": 100
-            }
+            },
+            "matched_text": "The MIT License (MIT)\n *\n * [Copyright] [base]-[x] [contributors] ([c]) [2016]\n *\n * Permission is hereby granted, free of charge, to any person obtaining a copy\n * of this software and associated documentation files (the \"Software\"), to deal\n * in the Software without restriction, including without limitation the rights\n * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n * copies of the Software, and to permit persons to whom the Software is\n * furnished to do so, subject to the following conditions:\n *\n * The above copyright notice and this permission notice shall be included in\n * all copies or substantial portions of the Software.\n *\n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING\n * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER\n * DEALINGS IN THE SOFTWARE."
           }
         ],
         "license_expressions": ["mit", "mit"],
@@ -1162,6 +1208,7 @@
         "copyrights": [{ "value": "(c) 2016", "start_line": 11, "end_line": 11 }],
         "authors": [],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1189,15 +1236,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1225,15 +1267,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1261,21 +1298,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright 2008-2013 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
-        "authors": [
-          {
-            "value": "David I. Lehn <dlehn@digitalbazaar.com>",
-            "start_line": 4,
-            "end_line": 4
-          }
-        ],
+        "copyrights": [{ "value": "Copyright 2008-2013 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
+        "authors": [{ "value": "David I. Lehn <dlehn@digitalbazaar.com>", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1329,7 +1355,8 @@
               "matched_length": 2,
               "match_coverage": 100,
               "rule_relevance": 11
-            }
+            },
+            "matched_text": "BSD-licensed"
           },
           {
             "key": "warranty-disclaimer",
@@ -1359,7 +1386,8 @@
               "matched_length": 109,
               "match_coverage": 100,
               "rule_relevance": 100
-            }
+            },
+            "matched_text": "THIS SOFTWARE IS PROVIDED \"AS IS\" AND\n * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\n * ARE DISCLAIMED.  IN NO EVENT SHALL THE AUTHOR OR CONTRIBUTORS BE LIABLE\n * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS\n * OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)\n * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT\n * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY\n * OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF\n * SUCH DAMAGE."
           }
         ],
         "license_expressions": ["bsd-new", "warranty-disclaimer"],
@@ -1368,22 +1396,15 @@
           { "value": "Digital Bazaar, Inc.", "start_line": 28, "end_line": 29 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 28,
-            "end_line": 29
-          },
-          {
-            "value": "Copyright (c) 2012-2014 Digital Bazaar, Inc.",
-            "start_line": 28,
-            "end_line": 29
-          }
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 28, "end_line": 29 },
+          { "value": "Copyright (c) 2012-2014 Digital Bazaar, Inc.", "start_line": 28, "end_line": 29 }
         ],
         "authors": [
           { "value": "Stefan Siegl", "start_line": 25, "end_line": 26 },
           { "value": "Dave Longley", "start_line": 25, "end_line": 26 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1425,7 +1446,7 @@
             "start_line": 7,
             "end_line": 7,
             "matched_rule": {
-              "identifier": "public-domain_79.RULE",
+              "identifier": "public-domain_bare_words.RULE",
               "license_expression": "public-domain",
               "licenses": ["public-domain"],
               "is_license_text": false,
@@ -1437,20 +1458,16 @@
               "matched_length": 2,
               "match_coverage": 100,
               "rule_relevance": 50
-            }
+            },
+            "matched_text": "public domain."
           }
         ],
         "license_expressions": ["public-domain"],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 4, "end_line": 4 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2017-2018 Digital Bazaar, Inc.",
-            "start_line": 4,
-            "end_line": 4
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2017-2018 Digital Bazaar, Inc.", "start_line": 4, "end_line": 4 }],
         "authors": [],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1478,15 +1495,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright 2011-2016 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright 2011-2016 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1514,23 +1526,14 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2011-2014 Digital Bazaar, Inc.",
-            "start_line": 8,
-            "end_line": 8
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2011-2014 Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
         "authors": [
-          {
-            "value": "David I. Lehn <dlehn@digitalbazaar.com>",
-            "start_line": 4,
-            "end_line": 6
-          },
+          { "value": "David I. Lehn <dlehn@digitalbazaar.com>", "start_line": 4, "end_line": 6 },
           { "value": "Dave Longley", "start_line": 4, "end_line": 6 },
           { "value": "Mike Johnson", "start_line": 4, "end_line": 6 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1558,15 +1561,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2012 Digital Bazaar, Inc.",
-            "start_line": 8,
-            "end_line": 8
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2012 Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
         "authors": [{ "value": "Dave Longley", "start_line": 6, "end_line": 6 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1594,15 +1592,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1630,15 +1623,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright 2011-2016 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright 2011-2016 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1666,15 +1654,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright 2011-2016 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright 2011-2016 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1728,7 +1711,8 @@
               "matched_length": 195,
               "match_coverage": 100,
               "rule_relevance": 100
-            }
+            },
+            "matched_text": "Permission is hereby granted, free of charge, to any person obtaining\n * a copy of this software and associated documentation files (the\n * \"Software\"), to deal in the Software without restriction, including\n * without limitation the rights to use, copy, modify, merge, publish,\n * distribute, sublicense, and/or sell copies of the Software, and to\n * permit persons to whom the Software is furnished to do so, subject to\n * the following conditions:\n *\n * The above copyright notice and this permission notice shall be\n * included in all copies or substantial portions of the Software.\n *\n * THE SOFTWARE IS PROVIDED \"AS-IS\" AND WITHOUT WARRANTY OF ANY KIND,\n * EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY\n * WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.\n *\n * IN NO EVENT SHALL TOM WU BE LIABLE FOR ANY SPECIAL, INCIDENTAL,\n * INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER\n * RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF\n * THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT\n * OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.\n *\n * In addition, the following condition applies:\n *\n * All redistributions must retain an intact copy of this copyright notice\n * and disclaimer."
           }
         ],
         "license_expressions": ["mit-addition"],
@@ -1738,24 +1722,13 @@
           { "value": "Tom Wu", "start_line": 611, "end_line": 612 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2005 Tom Wu",
-            "start_line": 1,
-            "end_line": 2
-          },
-          {
-            "value": "Copyright (c) 2003-2005 Tom Wu",
-            "start_line": 11,
-            "end_line": 15
-          },
-          {
-            "value": "Copyright (c) 2005-2009 Tom Wu",
-            "start_line": 611,
-            "end_line": 612
-          }
+          { "value": "Copyright (c) 2005 Tom Wu", "start_line": 1, "end_line": 2 },
+          { "value": "Copyright (c) 2003-2005 Tom Wu", "start_line": 11, "end_line": 15 },
+          { "value": "Copyright (c) 2005-2009 Tom Wu", "start_line": 611, "end_line": 612 }
         ],
         "authors": [],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1787,26 +1760,15 @@
           { "value": "Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2014 Lautaro Cozzani <lautaro.cozzani@scytl.com>",
-            "start_line": 7,
-            "end_line": 8
-          },
-          {
-            "value": "Copyright (c) 2014 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 8
-          }
+          { "value": "Copyright (c) 2014 Lautaro Cozzani <lautaro.cozzani@scytl.com>", "start_line": 7, "end_line": 8 },
+          { "value": "Copyright (c) 2014 Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 }
         ],
         "authors": [
-          {
-            "value": "Lautaro Cozzani Rodriguez",
-            "start_line": 4,
-            "end_line": 5
-          },
+          { "value": "Lautaro Cozzani Rodriguez", "start_line": 4, "end_line": 5 },
           { "value": "Dave Longley", "start_line": 4, "end_line": 5 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1834,21 +1796,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2008-2013 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
-        "authors": [
-          {
-            "value": "David I. Lehn <dlehn@digitalbazaar.com>",
-            "start_line": 4,
-            "end_line": 4
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2008-2013 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
+        "authors": [{ "value": "David I. Lehn <dlehn@digitalbazaar.com>", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1876,15 +1827,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright 2011-2017 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright 2011-2017 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1912,15 +1858,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright 2011-2017 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright 2011-2017 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1948,15 +1889,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -1985,14 +1921,11 @@
         "license_expressions": [],
         "holders": [{ "value": "Stefan Siegl", "start_line": 6, "end_line": 6 }],
         "copyrights": [
-          {
-            "value": "Copyright 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 6,
-            "end_line": 6
-          }
+          { "value": "Copyright 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 6, "end_line": 6 }
         ],
         "authors": [{ "value": "Stefan Siegl", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2024,22 +1957,15 @@
           { "value": "Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 7,
-            "end_line": 8
-          },
-          {
-            "value": "Copyright (c) 2014 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 8
-          }
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 7, "end_line": 8 },
+          { "value": "Copyright (c) 2014 Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 }
         ],
         "authors": [
           { "value": "Stefan Siegl", "start_line": 4, "end_line": 5 },
           { "value": "Dave Longley", "start_line": 4, "end_line": 5 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2067,15 +1993,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2107,26 +2028,15 @@
           { "value": "Stefan Siegl", "start_line": 7, "end_line": 8 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 8
-          },
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 7,
-            "end_line": 8
-          }
+          { "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 },
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 7, "end_line": 8 }
         ],
         "authors": [
           { "value": "Dave Longley", "start_line": 4, "end_line": 5 },
-          {
-            "value": "Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 4,
-            "end_line": 5
-          }
+          { "value": "Stefan Siegl <stesie@brokenpipe.de>", "start_line": 4, "end_line": 5 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2154,15 +2064,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.",
-            "start_line": 8,
-            "end_line": 8
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
         "authors": [{ "value": "Dave Longley", "start_line": 6, "end_line": 6 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2190,15 +2095,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2013-2014 Digital Bazaar, Inc.",
-            "start_line": 8,
-            "end_line": 8
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2013-2014 Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
         "authors": [{ "value": "Dave Longley", "start_line": 6, "end_line": 6 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2252,7 +2152,8 @@
               "matched_length": 2,
               "match_coverage": 100,
               "rule_relevance": 11
-            }
+            },
+            "matched_text": "BSD licensed"
           },
           {
             "key": "mit",
@@ -2282,11 +2183,12 @@
               "matched_length": 165,
               "match_coverage": 98.8,
               "rule_relevance": 100
-            }
+            },
+            "matched_text": "License\n *\n * Copyright ([c]) [2012] [Kenji] [Urushima]\n *\n * Permission is hereby granted, free of charge, to any person obtaining a copy\n * of this software and associated documentation files (the \"Software\"), to deal\n * in the Software without restriction, including without limitation the rights\n * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell\n * copies of the Software, and to permit persons to whom the Software is\n * furnished to do so, subject to the following conditions:\n *\n * The above copyright notice and this permission notice shall be included in\n * all copies or substantial portions of the Software.\n *\n * THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR\n * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,\n * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE\n * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER\n * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,\n * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN\n * THE SOFTWARE."
           },
           {
             "key": "bsd-new",
-            "score": 17,
+            "score": 16,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -2311,46 +2213,28 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 16
+            },
+            "matched_text": "the BSD License."
           }
         ],
         "license_expressions": ["bsd-new", "mit", "bsd-new"],
         "holders": [
           { "value": "Kenji Urushima", "start_line": 10, "end_line": 10 },
-          {
-            "value": "Ellis Pritchard, Guardian Unlimited",
-            "start_line": 34,
-            "end_line": 37
-          },
+          { "value": "Ellis Pritchard, Guardian Unlimited", "start_line": 34, "end_line": 37 },
           { "value": "Digital Bazaar, Inc.", "start_line": 44, "end_line": 44 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012 Kenji Urushima",
-            "start_line": 10,
-            "end_line": 10
-          },
-          {
-            "value": "Copyright (c) Ellis Pritchard, Guardian Unlimited 2003.",
-            "start_line": 34,
-            "end_line": 37
-          },
-          {
-            "value": "Copyright (c) 2013-2014 Digital Bazaar, Inc.",
-            "start_line": 44,
-            "end_line": 44
-          }
+          { "value": "Copyright (c) 2012 Kenji Urushima", "start_line": 10, "end_line": 10 },
+          { "value": "Copyright (c) Ellis Pritchard, Guardian Unlimited 2003.", "start_line": 34, "end_line": 37 },
+          { "value": "Copyright (c) 2013-2014 Digital Bazaar, Inc.", "start_line": 44, "end_line": 44 }
         ],
         "authors": [
-          {
-            "value": "Evan Jones (http://evanjones.ca/)",
-            "start_line": 41,
-            "end_line": 42
-          },
+          { "value": "Evan Jones (http://evanjones.ca/)", "start_line": 41, "end_line": 42 },
           { "value": "Dave Longley", "start_line": 41, "end_line": 42 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2382,26 +2266,15 @@
           { "value": "Stefan Siegl", "start_line": 7, "end_line": 8 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 8
-          },
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 7,
-            "end_line": 8
-          }
+          { "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 },
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 7, "end_line": 8 }
         ],
         "authors": [
           { "value": "Dave Longley", "start_line": 4, "end_line": 5 },
-          {
-            "value": "Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 4,
-            "end_line": 5
-          }
+          { "value": "Stefan Siegl <stesie@brokenpipe.de>", "start_line": 4, "end_line": 5 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2433,22 +2306,15 @@
           { "value": "Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 7,
-            "end_line": 8
-          },
-          {
-            "value": "Copyright (c) 2012-2015 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 8
-          }
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 7, "end_line": 8 },
+          { "value": "Copyright (c) 2012-2015 Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 }
         ],
         "authors": [
           { "value": "Stefan Siegl", "start_line": 4, "end_line": 5 },
           { "value": "Dave Longley", "start_line": 4, "end_line": 5 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2480,22 +2346,15 @@
           { "value": "Stefan Siegl", "start_line": 7, "end_line": 8 }
         ],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012-2015 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 8
-          },
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 7,
-            "end_line": 8
-          }
+          { "value": "Copyright (c) 2012-2015 Digital Bazaar, Inc.", "start_line": 7, "end_line": 8 },
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 7, "end_line": 8 }
         ],
         "authors": [
           { "value": "Dave Longley", "start_line": 4, "end_line": 5 },
           { "value": "Stefan Siegl", "start_line": 4, "end_line": 5 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2523,15 +2382,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 7, "end_line": 7 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 7
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.", "start_line": 7, "end_line": 7 }],
         "authors": [{ "value": "Dave Longley", "start_line": 5, "end_line": 5 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2559,15 +2413,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2595,15 +2444,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2013 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2013 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2645,7 +2489,7 @@
             "start_line": 305,
             "end_line": 305,
             "matched_rule": {
-              "identifier": "public-domain_79.RULE",
+              "identifier": "public-domain_bare_words.RULE",
               "license_expression": "public-domain",
               "licenses": ["public-domain"],
               "is_license_text": false,
@@ -2657,20 +2501,16 @@
               "matched_length": 2,
               "match_coverage": 100,
               "rule_relevance": 50
-            }
+            },
+            "matched_text": "Public Domain). */"
           }
         ],
         "license_expressions": ["public-domain"],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 10, "end_line": 10 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 10,
-            "end_line": 10
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 10, "end_line": 10 }],
         "authors": [{ "value": "Dave Longley", "start_line": 8, "end_line": 8 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2699,14 +2539,11 @@
         "license_expressions": [],
         "holders": [{ "value": "Stefan Siegl", "start_line": 6, "end_line": 6 }],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 6,
-            "end_line": 6
-          }
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 6, "end_line": 6 }
         ],
         "authors": [{ "value": "Stefan Siegl", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2734,15 +2571,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 14, "end_line": 14 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2009-2014 Digital Bazaar, Inc.",
-            "start_line": 14,
-            "end_line": 14
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2009-2014 Digital Bazaar, Inc.", "start_line": 14, "end_line": 14 }],
         "authors": [{ "value": "Dave Longley", "start_line": 12, "end_line": 12 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2771,14 +2603,11 @@
         "license_expressions": [],
         "holders": [{ "value": "Stefan Siegl", "start_line": 6, "end_line": 6 }],
         "copyrights": [
-          {
-            "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>",
-            "start_line": 6,
-            "end_line": 6
-          }
+          { "value": "Copyright (c) 2012 Stefan Siegl <stesie@brokenpipe.de>", "start_line": 6, "end_line": 6 }
         ],
         "authors": [{ "value": "Stefan Siegl", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2806,15 +2635,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2842,15 +2666,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2015 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2015 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2878,15 +2697,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2015 Digital Bazaar, Inc.",
-            "start_line": 8,
-            "end_line": 8
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2015 Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
         "authors": [{ "value": "Dave Longley", "start_line": 6, "end_line": 6 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2914,15 +2728,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 11, "end_line": 11 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2014-2015 Digital Bazaar, Inc.",
-            "start_line": 11,
-            "end_line": 11
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2014-2015 Digital Bazaar, Inc.", "start_line": 11, "end_line": 11 }],
         "authors": [{ "value": "Dave Longley", "start_line": 9, "end_line": 9 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2950,15 +2759,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -2986,7 +2790,7 @@
         "licenses": [
           {
             "key": "bsd-new",
-            "score": 17,
+            "score": 16,
             "name": "BSD-3-Clause",
             "short_name": "BSD-3-Clause",
             "category": "Permissive",
@@ -3011,12 +2815,13 @@
               "rule_length": 3,
               "matched_length": 3,
               "match_coverage": 100,
-              "rule_relevance": 17
-            }
+              "rule_relevance": 16
+            },
+            "matched_text": "the BSD License"
           },
           {
             "key": "gpl-2.0",
-            "score": 41,
+            "score": 38,
             "name": "GNU General Public License 2.0",
             "short_name": "GPL 2.0",
             "category": "Copyleft",
@@ -3041,21 +2846,17 @@
               "rule_length": 7,
               "matched_length": 7,
               "match_coverage": 100,
-              "rule_relevance": 41
-            }
+              "rule_relevance": 38
+            },
+            "matched_text": "GNU General Public License (GPL) Version 2."
           }
         ],
         "license_expressions": ["bsd-new", "gpl-2.0"],
         "holders": [],
         "copyrights": [],
-        "authors": [
-          {
-            "value": "https://github.com/shellac",
-            "start_line": 9,
-            "end_line": 9
-          }
-        ],
+        "authors": [{ "value": "https://github.com/shellac", "start_line": 9, "end_line": 9 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -3083,22 +2884,13 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2009-2013 Digital Bazaar, Inc.",
-            "start_line": 8,
-            "end_line": 8
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2009-2013 Digital Bazaar, Inc.", "start_line": 8, "end_line": 8 }],
         "authors": [
           { "value": "Dave Longley", "start_line": 5, "end_line": 6 },
-          {
-            "value": "David I. Lehn <dlehn@digitalbazaar.com>",
-            "start_line": 5,
-            "end_line": 6
-          }
+          { "value": "David I. Lehn <dlehn@digitalbazaar.com>", "start_line": 5, "end_line": 6 }
         ],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -3126,15 +2918,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2009-2014 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2009-2014 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -3162,15 +2949,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2009-2012 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2009-2012 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -3198,15 +2980,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2018 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2018 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -3234,15 +3011,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 7, "end_line": 7 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.",
-            "start_line": 7,
-            "end_line": 7
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2014 Digital Bazaar, Inc.", "start_line": 7, "end_line": 7 }],
         "authors": [{ "value": "Dave Longley", "start_line": 5, "end_line": 5 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
@@ -3270,15 +3042,10 @@
         "licenses": [],
         "license_expressions": [],
         "holders": [{ "value": "Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
-        "copyrights": [
-          {
-            "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.",
-            "start_line": 6,
-            "end_line": 6
-          }
-        ],
+        "copyrights": [{ "value": "Copyright (c) 2010-2013 Digital Bazaar, Inc.", "start_line": 6, "end_line": 6 }],
         "authors": [{ "value": "Dave Longley", "start_line": 4, "end_line": 4 }],
         "packages": [],
+        "is_license_text": false,
         "files_count": 0,
         "dirs_count": 0,
         "size_count": 0,
